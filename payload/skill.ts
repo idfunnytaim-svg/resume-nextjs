@@ -1,115 +1,135 @@
 import { ISkill } from '../component/skill/ISkill';
 
 const programming: ISkill.Skill = {
-  category: 'Programming',
+  category: 'Programming Language',
   items: [
     {
-      title: 'Python',
-      level: 2,
+      title: 'Python3',
+      level: 1,
     },
     {
-      title: 'Data Preprocessing',
-      level: 2,
+      title: 'C',
+      level: 1,
     },
     {
-      title: 'Arduino',
-      level: 2,
+      title: 'MATLAB',
+      level: 1,
     },
   ],
 };
 
-const deepLearning: ISkill.Skill = {
-  category: 'Deep Learning / Computer Vision',
+const aiComputerVision: ISkill.Skill = {
+  category: 'AI / Computer Vision',
   items: [
     {
       title: 'CNN',
-      level: 2,
+      level: 1,
     },
     {
       title: 'LeNet-5',
-      level: 2,
+      level: 1,
     },
     {
       title: 'AlexNet',
-      level: 2,
+      level: 1,
     },
     {
       title: 'Image Classification',
-      level: 2,
+      level: 1,
     },
     {
       title: 'Cornell Grasp Dataset',
-      level: 2,
+      level: 1,
+    },
+    {
+      title: 'Model Training / Evaluation',
+      level: 1,
+    },
+    {
+      title: 'Data Preprocessing',
+      level: 1,
     },
   ],
 };
 
-const aiEngineering: ISkill.Skill = {
-  category: 'AI Engineering',
+const controlSimulation: ISkill.Skill = {
+  category: 'Control / Simulation Tools',
   items: [
     {
-      title: 'Model Training',
-      level: 2,
+      title: 'LabVIEW',
+      level: 1,
     },
     {
-      title: 'Model Evaluation',
-      level: 2,
+      title: 'PSIM',
+      level: 1,
     },
     {
-      title: 'Training Log Analysis',
-      level: 2,
+      title: 'FEMM',
+      level: 1,
     },
     {
-      title: 'End-to-End AI Pipeline',
-      level: 2,
+      title: 'PSpice',
+      level: 1,
     },
   ],
 };
 
-const robotics: ISkill.Skill = {
-  category: 'Robotics / Control',
+const embeddedHardware: ISkill.Skill = {
+  category: 'Embedded / Hardware',
   items: [
     {
-      title: 'Gripper Control',
-      level: 2,
+      title: 'Arduino',
+      level: 1,
+    },
+    {
+      title: 'Raspberry Pi 4',
+      level: 1,
+    },
+    {
+      title: 'PLC',
+      level: 1,
+    },
+    {
+      title: 'EtherMotion',
+      level: 1,
     },
     {
       title: 'Servo Motor Control',
-      level: 2,
+      level: 1,
     },
     {
       title: 'Serial Communication',
-      level: 2,
-    },
-    {
-      title: 'Object Recognition Based Control',
-      level: 2,
+      level: 1,
     },
   ],
 };
 
-const misc: ISkill.Skill = {
-  category: 'Etc',
+const engineering: ISkill.Skill = {
+  category: 'Engineering Experience',
   items: [
     {
       title: 'Experiment Design',
+      level: 1,
     },
     {
       title: 'Data Analysis',
+      level: 1,
     },
     {
       title: 'Technical Report Writing',
+      level: 1,
     },
     {
-      title: 'Mentoring',
+      title: 'Teaching / Tutoring',
+      level: 1,
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [programming, deepLearning, aiEngineering, robotics, misc],
-  tooltip: '1: 기초 학습 수준\n2: 프로젝트 구현 가능 수준\n3: 실무 독립 수행 가능 수준',
+  skills: [programming, aiComputerVision, controlSimulation, embeddedHardware, engineering],
+  tooltip: '1: 학습 및 사용 경험\n2: 프로젝트 구현 가능 수준\n3: 실무 독립 수행 가능 수준',
 };
 
 export default skill;

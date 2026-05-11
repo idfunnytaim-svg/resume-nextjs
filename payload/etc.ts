@@ -45,6 +45,30 @@ const etc: IEtc.Payload = {
       startedAt: '2016-12',
       endedAt: '2018-12',
     },
+    {
+      title: '비상연구실 학부생연구원',
+      subTitle: '시스템제어공학과 이석원 교수님 연구실에서 약 2년간 학부생연구원으로 재적',
+      startedAt: '2015-07',
+      endedAt: '2019-12',
+    },
+    {
+      title: 'Hi-Five 수학 튜터',
+      subTitle: '2020년 1학기 Hi-Five 프로그램에서 학과 1학년을 대상으로 수학 튜터링 진행',
+      startedAt: '2020-03',
+      endedAt: '2020-06',
+    },
+    {
+      title: 'Reborn 학습공동체 멘토',
+      subTitle: '2020년 2학기 Reborn 학습공동체 활동으로 1학년 대상 전자전기개론 학습 지도',
+      startedAt: '2020-09',
+      endedAt: '2020-12',
+    },
+    {
+      title: '인디밴드 동아리 태조산',
+      subTitle: '드럼 파트로 정기 합주 및 공연 활동 참여',
+      startedAt: '2015-03',
+      endedAt: '2015-12',
+    },
   ],
 };
 
