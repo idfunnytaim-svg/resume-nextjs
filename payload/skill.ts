@@ -1,178 +1,115 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const programmingLanguages: ISkill.Skill = {
-  category: 'Programming Languages',
+const programming: ISkill.Skill = {
+  category: 'Programming',
   items: [
-    {
-      title: 'C',
-      level: 3,
-    },
-    {
-      title: 'Shell Scripting',
-      level: 3,
-    },
     {
       title: 'Python',
-      level: 3,
-    },
-    {
-      title: 'Perl',
       level: 2,
     },
     {
-      title: 'Golang',
+      title: 'Data Preprocessing',
       level: 2,
     },
     {
-      title: 'Rust',
-      level: 1,
-    },
-  ],
-};
-
-const kernelDevelopment: ISkill.Skill = {
-  category: 'Kernel Development',
-  items: [
-    {
-      title: 'Kernel Programming',
-      level: 3,
-    },
-    {
-      title: 'GNU Debugger',
-      level: 3,
-    },
-    {
-      title: 'Memory Management',
-      level: 2,
-    },
-    {
-      title: 'System Call Interface',
+      title: 'Arduino',
       level: 2,
     },
   ],
 };
 
-const virtualization: ISkill.Skill = {
-  category: 'Virtualization',
+const deepLearning: ISkill.Skill = {
+  category: 'Deep Learning / Computer Vision',
   items: [
     {
-      title: 'Docker',
-      level: 3,
-    },
-    {
-      title: 'KVM',
-      level: 3,
-    },
-    {
-      title: 'Xen',
+      title: 'CNN',
       level: 2,
     },
     {
-      title: 'VirtualBox',
+      title: 'LeNet-5',
       level: 2,
     },
     {
-      title: 'VMware ESXi',
-      level: 1,
+      title: 'AlexNet',
+      level: 2,
+    },
+    {
+      title: 'Image Classification',
+      level: 2,
+    },
+    {
+      title: 'Cornell Grasp Dataset',
+      level: 2,
     },
   ],
 };
 
-const automation: ISkill.Skill = {
-  category: 'Automation',
+const aiEngineering: ISkill.Skill = {
+  category: 'AI Engineering',
   items: [
     {
-      title: 'Ansible',
-      level: 3,
-    },
-    {
-      title: 'Puppet',
-      level: 3,
-    },
-    {
-      title: 'Chef',
+      title: 'Model Training',
       level: 2,
     },
     {
-      title: 'Jenkins',
+      title: 'Model Evaluation',
       level: 2,
     },
     {
-      title: 'CI/CD Pipelines',
-      level: 1,
+      title: 'Training Log Analysis',
+      level: 2,
     },
     {
-      title: 'Infrastructure as Code',
-      level: 1,
+      title: 'End-to-End AI Pipeline',
+      level: 2,
     },
   ],
 };
 
-const networkSecurity: ISkill.Skill = {
-  category: 'Network Security',
+const robotics: ISkill.Skill = {
+  category: 'Robotics / Control',
   items: [
     {
-      title: 'iptables',
-      level: 3,
-    },
-    {
-      title: 'OpenSSH',
-      level: 3,
-    },
-    {
-      title: 'OpenSSL',
+      title: 'Gripper Control',
       level: 2,
     },
     {
-      title: 'NACLs',
+      title: 'Servo Motor Control',
       level: 2,
     },
     {
-      title: 'VPN Technologies',
+      title: 'Serial Communication',
       level: 2,
     },
     {
-      title: 'Intrusion Detection',
-      level: 1,
+      title: 'Object Recognition Based Control',
+      level: 2,
     },
   ],
 };
 
 const misc: ISkill.Skill = {
-  category: 'Misc',
+  category: 'Etc',
   items: [
     {
-      title: 'Coffee Brewing',
+      title: 'Experiment Design',
     },
     {
-      title: "Rubik's Cube Solving",
+      title: 'Data Analysis',
     },
     {
-      title: 'Table Tennis',
+      title: 'Technical Report Writing',
     },
     {
-      title: 'Guitar Playing',
-    },
-    {
-      title: 'Joke Telling',
-    },
-    {
-      title: 'Duct Tape Crafting',
+      title: 'Mentoring',
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [
-    programmingLanguages,
-    kernelDevelopment,
-    virtualization,
-    automation,
-    networkSecurity,
-    misc,
-  ],
-  tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  skills: [programming, deepLearning, aiEngineering, robotics, misc],
+  tooltip: '1: 기초 학습 수준\n2: 프로젝트 구현 가능 수준\n3: 실무 독립 수행 가능 수준',
 };
 
 export default skill;
